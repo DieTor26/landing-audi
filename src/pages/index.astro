@@ -1,0 +1,184 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ButtonWhite from '../components/ButtonWhite.astro';
+import ButtonBlack from '../components/ButtonBlack.astro';
+import MapIcon from '../icons/MapIcon.astro';
+import PhoneIcon from '../icons/PhoneIcon.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<header class="bg-black text-white">
+		<Header />
+	</header>
+	<section class="bg-black w-full">
+		<div class="flex items-center mx-auto w-full max-w-7xl bg-black">
+			<div class="mr-10 mb-4">
+				<h1 class="text-white text-5xl">Busca el taller y repuestos de tu AUDI más cerca de tu ubicación</h1>
+				<div class="flex mt-4">
+					<ButtonWhite>Buscar Taller</ButtonWhite>
+					<ButtonBlack>Buscar Repuestos</ButtonBlack>
+				</div>
+			</div>
+			<img src="/assets/audi-car.png" alt="audi-car" class="w-1/2 lg:w-auto">
+		</div>
+	</section>
+
+	<section class="bg-teal-300 w-full p-5">
+		<div class="flex justify-between items-center w-full max-w-7xl mx-auto bg-teal-300">
+			<p class="text-black text-lg">
+				<strong>¿Tienes más de dos unidades?</strong>, Visita nuestro canal empresa
+			</p>
+			<ButtonWhite>Canal ></ButtonWhite>
+
+		</div>
+	</section>
+
+	<section class="bg-neutral-200 w-full pt-24">
+		<div class="flex justify-center items-center bg-neutral-200 mb-8">
+			<h1 class="text-black text-4xl font-bold flex justify-center flex-row">Encuentra el centro especializado<br> y oficial más cercano</h1>
+
+		</div>
+
+		
+<div class="flex justify-center space-x-4 mb-8">
+	<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+		<a href="#">
+			<img class="rounded-t-lg" src="/assets/mechanic.jpeg" alt="" />
+		</a>
+		<div class="p-5">
+			<div class="flex items-center mb-7">
+				<MapIcon class="flex w-10 h-10 mr-4" />
+				<p class="mb-7 font-normal text-gray-700 dark:text-gray-400">Av. Honorio Delgado Nº 320 <br> Urb. Semirústica, El Bosque, Trujillo</p>
+			</div>
+			
+			<div class="flex items-center mb-7">
+				<PhoneIcon class="flex w-10 h-10 mr-4" />
+				<p class="mb-5 font-normal text-gray-700 dark:text-gray-400">914817239</p>
+			</div>
+			<div class="flex justify-center space-x-6">
+				<ButtonWhite>Llamar</ButtonWhite>
+				<ButtonWhite>Mapa</ButtonWhite>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+		<a href="#">
+			<img class="rounded-t-lg" src="/assets/mechanic.jpeg" alt="" />
+		</a>
+		<div class="p-5">
+			<div class="flex items-center mb-7">
+				<MapIcon class="flex w-10 h-10 mr-4" />
+				<p class="mb-7 font-normal text-gray-700 dark:text-gray-400">Av. Honorio Delgado Nº 320 <br> Urb. Semirústica, El Bosque, Trujillo</p>
+			</div>
+			
+			<div class="flex items-center mb-7">
+				<PhoneIcon class="flex w-10 h-10 mr-4" />
+				<p class="mb-5 font-normal text-gray-700 dark:text-gray-400">914817239</p>
+			</div>
+			<div class="flex justify-center space-x-6">
+				<ButtonWhite>Llamar</ButtonWhite>
+				<ButtonWhite>Mapa</ButtonWhite>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+		<a href="#">
+			<img class="rounded-t-lg" src="/assets/mechanic.jpeg" alt="" />
+		</a>
+		<div class="p-5">
+			<div class="flex items-center mb-7">
+				<MapIcon class="flex w-10 h-10 mr-4" />
+				<p class="mb-7 font-normal text-gray-700 dark:text-gray-400">Av. Honorio Delgado Nº 320 <br> Urb. Semirústica, El Bosque, Trujillo</p>
+			</div>
+			
+			<div class="flex items-center mb-7">
+				<PhoneIcon class="flex w-10 h-10 mr-4" />
+				<p class="mb-5 font-normal text-gray-700 dark:text-gray-400">914817239</p>
+			</div>
+			<div class="flex justify-center space-x-6">
+				<ButtonWhite>Llamar</ButtonWhite>
+				<ButtonWhite>Mapa</ButtonWhite>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+<div class="flex justify-center space-x-4 mb-8">
+	<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+		<a href="#">
+			<img class="rounded-t-lg" src="/assets/mechanic.jpeg" alt="" />
+		</a>
+		<div class="p-5">
+			<div class="flex items-center mb-7">
+				<MapIcon class="flex w-10 h-10 mr-4" />
+				<p class="mb-7 font-normal text-gray-700 dark:text-gray-400">Av. Honorio Delgado Nº 320 <br> Urb. Semirústica, El Bosque, Trujillo</p>
+			</div>
+			
+			<div class="flex items-center mb-7">
+				<PhoneIcon class="flex w-10 h-10 mr-4" />
+				<p class="mb-5 font-normal text-gray-700 dark:text-gray-400">914817239</p>
+			</div>
+			<div class="flex justify-center space-x-6">
+				<ButtonWhite>Llamar</ButtonWhite>
+				<ButtonWhite>Mapa</ButtonWhite>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+		<a href="#">
+			<img class="rounded-t-lg" src="/assets/mechanic.jpeg" alt="" />
+		</a>
+		<div class="p-5">
+			<div class="flex items-center mb-7">
+				<MapIcon class="flex w-10 h-10 mr-4" />
+				<p class="mb-7 font-normal text-gray-700 dark:text-gray-400">Av. Honorio Delgado Nº 320 <br> Urb. Semirústica, El Bosque, Trujillo</p>
+			</div>
+			
+			<div class="flex items-center mb-7">
+				<PhoneIcon class="flex w-10 h-10 mr-4" />
+				<p class="mb-5 font-normal text-gray-700 dark:text-gray-400">914817239</p>
+			</div>
+			<div class="flex justify-center space-x-6">
+				<ButtonWhite>Llamar</ButtonWhite>
+				<ButtonWhite>Mapa</ButtonWhite>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+		<a href="#">
+			<img class="rounded-t-lg" src="/assets/mechanic.jpeg" alt="" />
+		</a>
+		<div class="p-5">
+			<div class="flex items-center mb-7">
+				<MapIcon class="flex w-10 h-10 mr-4" />
+				<p class="mb-7 font-normal text-gray-700 dark:text-gray-400">Av. Honorio Delgado Nº 320 <br> Urb. Semirústica, El Bosque, Trujillo</p>
+			</div>
+			
+			<div class="flex items-center mb-7">
+				<PhoneIcon class="flex w-10 h-10 mr-4" />
+				<p class="mb-5 font-normal text-gray-700 dark:text-gray-400">914817239</p>
+			</div>
+			<div class="flex justify-center space-x-6">
+				<ButtonWhite>Llamar</ButtonWhite>
+				<ButtonWhite>Mapa</ButtonWhite>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+
+	</section>
+</Layout>
+
