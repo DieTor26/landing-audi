@@ -4,6 +4,21 @@ import ButtonWhite from '../components/ButtonWhite.astro';
 import ButtonBlack from '../components/ButtonBlack.astro';
 import MapIcon from '../icons/MapIcon.astro';
 import PhoneIcon from '../icons/PhoneIcon.astro';
+import EngineIcon from '../icons/EngineIcon.astro';
+import TankIcon from '../icons/TankIcon.astro';
+import OilIcon from '../icons/OilIcon.astro';
+import GaugeIcon from '../icons/GaugeIcon.astro';
+import GasIcon from '../icons/GasIcon.astro';
+import BatteryIcon from '../icons/BatteryIcon.astro';
+import WheelIcon from '../icons/WheelIcon.astro';
+import TemperatureIcon from '../icons/TemperatureIcon.astro';
+import FacebookIcon from '../icons/FacebookIcon.astro';
+import InstagramIcon from '../icons/InstagramIcon.astro';
+import LinkedInIcon from '../icons/LinkedInIcon.astro';
+import TikTokIcon from '../icons/TikTokIcon.astro';
+import YouTubeIcon from '../icons/YouTubeIcon.astro';
+import WhatsAppIcon from '../icons/WhatsAppIcon.astro'
+import Badge from '../components/Badge.astro';
 import Header from '../components/Header.astro';
 ---
 
@@ -14,8 +29,8 @@ import Header from '../components/Header.astro';
 	<section class="bg-black w-full">
 		<div class="flex items-center mx-auto w-full max-w-7xl bg-black">
 			<div class="mr-10 mb-4">
-				<h1 class="text-white text-5xl">Busca el taller y repuestos de tu AUDI más cerca de tu ubicación</h1>
-				<div class="flex mt-4">
+				<h1 class="font-bold text-white text-5xl">Busca el taller y repuestos de tu AUDI más cerca de tu ubicación</h1>
+				<div class="flex mt-10">
 					<ButtonWhite>Buscar Taller</ButtonWhite>
 					<ButtonBlack>Buscar Repuestos</ButtonBlack>
 				</div>
@@ -36,149 +51,246 @@ import Header from '../components/Header.astro';
 
 	<section class="bg-neutral-200 w-full pt-24">
 		<div class="flex justify-center items-center bg-neutral-200 mb-8">
-			<h1 class="text-black text-4xl font-bold flex justify-center flex-row">Encuentra el centro especializado<br> y oficial más cercano</h1>
+			<h1 class="text-black text-4xl font-bold text-center">Encuentra el centro especializado y <br> oficial más cercano</h1>
 
 		</div>
 
 		
-<div class="flex justify-center space-x-4 mb-8">
-	<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-		<a href="#">
-			<img class="rounded-t-lg" src="/assets/mechanic.jpeg" alt="" />
-		</a>
-		<div class="p-5">
-			<div class="flex items-center mb-7">
-				<MapIcon class="flex w-10 h-10 mr-4" />
-				<p class="mb-7 font-normal text-gray-700 dark:text-gray-400">Av. Honorio Delgado Nº 320 <br> Urb. Semirústica, El Bosque, Trujillo</p>
-			</div>
-			
-			<div class="flex items-center mb-7">
-				<PhoneIcon class="flex w-10 h-10 mr-4" />
-				<p class="mb-5 font-normal text-gray-700 dark:text-gray-400">914817239</p>
-			</div>
-			<div class="flex justify-center space-x-6">
-				<ButtonWhite>Llamar</ButtonWhite>
-				<ButtonWhite>Mapa</ButtonWhite>
-			</div>
-			
-		</div>
-	</div>
-	
-	<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-		<a href="#">
-			<img class="rounded-t-lg" src="/assets/mechanic.jpeg" alt="" />
-		</a>
-		<div class="p-5">
-			<div class="flex items-center mb-7">
-				<MapIcon class="flex w-10 h-10 mr-4" />
-				<p class="mb-7 font-normal text-gray-700 dark:text-gray-400">Av. Honorio Delgado Nº 320 <br> Urb. Semirústica, El Bosque, Trujillo</p>
-			</div>
-			
-			<div class="flex items-center mb-7">
-				<PhoneIcon class="flex w-10 h-10 mr-4" />
-				<p class="mb-5 font-normal text-gray-700 dark:text-gray-400">914817239</p>
-			</div>
-			<div class="flex justify-center space-x-6">
-				<ButtonWhite>Llamar</ButtonWhite>
-				<ButtonWhite>Mapa</ButtonWhite>
-			</div>
-			
-		</div>
-	</div>
-	
-	<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-		<a href="#">
-			<img class="rounded-t-lg" src="/assets/mechanic.jpeg" alt="" />
-		</a>
-		<div class="p-5">
-			<div class="flex items-center mb-7">
-				<MapIcon class="flex w-10 h-10 mr-4" />
-				<p class="mb-7 font-normal text-gray-700 dark:text-gray-400">Av. Honorio Delgado Nº 320 <br> Urb. Semirústica, El Bosque, Trujillo</p>
-			</div>
-			
-			<div class="flex items-center mb-7">
-				<PhoneIcon class="flex w-10 h-10 mr-4" />
-				<p class="mb-5 font-normal text-gray-700 dark:text-gray-400">914817239</p>
-			</div>
-			<div class="flex justify-center space-x-6">
-				<ButtonWhite>Llamar</ButtonWhite>
-				<ButtonWhite>Mapa</ButtonWhite>
-			</div>
-			
-		</div>
-	</div>
-</div>
+		<div class="w-full max-w-4xl mx-auto grid grid-cols-3 grid-rows-2 gap-2 mb-8">
+			<div class="mb-4 mr-2 basis-1/3 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+				<img class="rounded-t-lg" src="/assets/mechanic.jpeg" alt="" />
 
-<div class="flex justify-center space-x-4 mb-8">
-	<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-		<a href="#">
-			<img class="rounded-t-lg" src="/assets/mechanic.jpeg" alt="" />
-		</a>
-		<div class="p-5">
-			<div class="flex items-center mb-7">
-				<MapIcon class="flex w-10 h-10 mr-4" />
-				<p class="mb-7 font-normal text-gray-700 dark:text-gray-400">Av. Honorio Delgado Nº 320 <br> Urb. Semirústica, El Bosque, Trujillo</p>
+				<div class="p-5">
+					<div class="flex items-center mb-7">
+						<MapIcon class="flex w-10 h-10 mr-4" />
+						<p class="ml-3 font-normal text-gray-700 dark:text-gray-400">Av. Honorio Delgado Nº 320 <br> Urb. Semirústica, El Bosque, Trujillo</p>
+					</div>
+			
+					<div class="flex items-center mb-7">
+						<PhoneIcon class="flex w-10 h-10 mr-4" />
+						<p class="ml-3 font-normal text-gray-700 dark:text-gray-400">914817239</p>
+					</div>
+					<div class="flex justify-center space-x-6">
+						<ButtonWhite>Llamar</ButtonWhite>
+						<ButtonWhite>Mapa</ButtonWhite>
+					</div>
+				</div>
 			</div>
 			
-			<div class="flex items-center mb-7">
-				<PhoneIcon class="flex w-10 h-10 mr-4" />
-				<p class="mb-5 font-normal text-gray-700 dark:text-gray-400">914817239</p>
-			</div>
-			<div class="flex justify-center space-x-6">
-				<ButtonWhite>Llamar</ButtonWhite>
-				<ButtonWhite>Mapa</ButtonWhite>
-			</div>
-			
-		</div>
-	</div>
-	
-	<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-		<a href="#">
-			<img class="rounded-t-lg" src="/assets/mechanic.jpeg" alt="" />
-		</a>
-		<div class="p-5">
-			<div class="flex items-center mb-7">
-				<MapIcon class="flex w-10 h-10 mr-4" />
-				<p class="mb-7 font-normal text-gray-700 dark:text-gray-400">Av. Honorio Delgado Nº 320 <br> Urb. Semirústica, El Bosque, Trujillo</p>
-			</div>
-			
-			<div class="flex items-center mb-7">
-				<PhoneIcon class="flex w-10 h-10 mr-4" />
-				<p class="mb-5 font-normal text-gray-700 dark:text-gray-400">914817239</p>
-			</div>
-			<div class="flex justify-center space-x-6">
-				<ButtonWhite>Llamar</ButtonWhite>
-				<ButtonWhite>Mapa</ButtonWhite>
-			</div>
-			
-		</div>
-	</div>
-	
-	<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-		<a href="#">
-			<img class="rounded-t-lg" src="/assets/mechanic.jpeg" alt="" />
-		</a>
-		<div class="p-5">
-			<div class="flex items-center mb-7">
-				<MapIcon class="flex w-10 h-10 mr-4" />
-				<p class="mb-7 font-normal text-gray-700 dark:text-gray-400">Av. Honorio Delgado Nº 320 <br> Urb. Semirústica, El Bosque, Trujillo</p>
-			</div>
-			
-			<div class="flex items-center mb-7">
-				<PhoneIcon class="flex w-10 h-10 mr-4" />
-				<p class="mb-5 font-normal text-gray-700 dark:text-gray-400">914817239</p>
-			</div>
-			<div class="flex justify-center space-x-6">
-				<ButtonWhite>Llamar</ButtonWhite>
-				<ButtonWhite>Mapa</ButtonWhite>
-			</div>
-			
-		</div>
-	</div>
-</div>
+			<div class="mb-4 mr-2 basis-1/3 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+				<img class="rounded-t-lg" src="/assets/mechanic.jpeg" alt="" />
 
+				<div class="p-5">
+					<div class="flex items-center mb-7">
+						<MapIcon class="flex w-10 h-10 mr-4" />
+						<p class="ml-3 font-normal text-gray-700 dark:text-gray-400">Av. Honorio Delgado Nº 320 <br> Urb. Semirústica, El Bosque, Trujillo</p>
+					</div>
+			
+					<div class="flex items-center mb-7">
+						<PhoneIcon class="flex w-10 h-10 mr-4" />
+						<p class="ml-3 font-normal text-gray-700 dark:text-gray-400">914817239</p>
+					</div>
+					<div class="flex justify-center space-x-6">
+						<ButtonWhite>Llamar</ButtonWhite>
+						<ButtonWhite>Mapa</ButtonWhite>
+					</div>
+				</div>
+			</div>
+
+			<div class="mb-4 mr-2 basis-1/3 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+				<img class="rounded-t-lg" src="/assets/mechanic.jpeg" alt="" />
+
+				<div class="p-5">
+					<div class="flex items-center mb-7">
+						<MapIcon class="flex w-10 h-10 mr-4" />
+						<p class="ml-3 font-normal text-gray-700 dark:text-gray-400">Av. Honorio Delgado Nº 320 <br> Urb. Semirústica, El Bosque, Trujillo</p>
+					</div>
+			
+					<div class="flex items-center mb-7">
+						<PhoneIcon class="flex w-10 h-10 mr-4" />
+						<p class="ml-3 font-normal text-gray-700 dark:text-gray-400">914817239</p>
+					</div>
+					<div class="flex justify-center space-x-6">
+						<ButtonWhite>Llamar</ButtonWhite>
+						<ButtonWhite>Mapa</ButtonWhite>
+					</div>
+				</div>
+			</div>
+
+			<div class="mb-4 mr-2 basis-1/3 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+				<img class="rounded-t-lg" src="/assets/mechanic.jpeg" alt="" />
+
+				<div class="p-5">
+					<div class="flex items-center mb-7">
+						<MapIcon class="flex w-10 h-10 mr-4" />
+						<p class="ml-3 font-normal text-gray-700 dark:text-gray-400">Av. Honorio Delgado Nº 320 <br> Urb. Semirústica, El Bosque, Trujillo</p>
+					</div>
+			
+					<div class="flex items-center mb-7">
+						<PhoneIcon class="flex w-10 h-10 mr-4" />
+						<p class="ml-3 font-normal text-gray-700 dark:text-gray-400">914817239</p>
+					</div>
+					<div class="flex justify-center space-x-6">
+						<ButtonWhite>Llamar</ButtonWhite>
+						<ButtonWhite>Mapa</ButtonWhite>
+					</div>
+				</div>
+			</div>
+
+			<div class="mb-4 mr-2 basis-1/3 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+				<div class="relative flex items-center">
+					<img class="rounded-t-lg" src="/assets/mechanic.jpeg" alt="" />
+					<div class="flex items-center">
+						<h3 class="absolute z-10 top-4  left-8 bg-black text-white  px-7 py-0.5 rounded-lg">Trujillo</h3>
+					</div>
+					
+				</div>
+
+				<div class="p-5">
+					<div class="flex items-center mb-7">
+						<MapIcon class="flex w-10 h-10 mr-4" />
+						<p class="ml-3 font-normal text-gray-700 dark:text-gray-400">Av. Honorio Delgado Nº 320 <br> Urb. Semirústica, El Bosque, Trujillo</p>
+					</div>
+			
+					<div class="flex items-center mb-7">
+						<PhoneIcon class="flex w-10 h-10 mr-4" />
+						<p class="ml-3 font-normal text-gray-700 dark:text-gray-400">914817239</p>
+					</div>
+					<div class="flex justify-center space-x-6">
+						<ButtonWhite>Llamar</ButtonWhite>
+						<ButtonWhite>Mapa</ButtonWhite>
+					</div>
+				</div>
+			</div>
+
+			<div class="mb-4 mr-2 basis-1/3 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+				<img class="rounded-t-lg" src="/assets/mechanic.jpeg" alt="" />
+
+				<div class="p-5">
+					<div class="flex items-center mb-7">
+						<MapIcon class="flex w-10 h-10 mr-4" />
+						<p class="ml-3 font-normal text-gray-700 dark:text-gray-400">Av. Honorio Delgado Nº 320 <br> Urb. Semirústica, El Bosque, Trujillo</p>
+					</div>
+			
+					<div class="flex items-center mb-7">
+						<PhoneIcon class="flex w-10 h-10 mr-4" />
+						<p class="ml-3 font-normal text-gray-700 dark:text-gray-400">914817239</p>
+					</div>
+					<div class="flex justify-center space-x-6">
+						<ButtonWhite>Llamar</ButtonWhite>
+						<ButtonWhite>Mapa</ButtonWhite>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 	</section>
+
+	<section class="bg-neutral-200 w-full pt-24">
+		<div class="flex justify-center items-center bg-neutral-200 mb-8">
+			<h1 class="text-black text-4xl font-bold text-center">El repuesto que estás buscando<br>en un solo lugar</h1>
+
+		</div>
+
+		<div class="w-full max-w-4xl mx-auto grid grid-cols-4 gap-2">
+
+			<div class="py-4 mr-4 mb-4 basis-1/4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 flex flex-col items-center justify-center">
+
+				<div class="mb-2"> <EngineIcon ></EngineIcon> </div>
+				<p class="mt-2 font-semibold text-gray-700 dark:text-gray-400">Motor</p>
+			</div>
+
+			<div class="py-4 mr-4 mb-4 basis-1/4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 flex flex-col items-center justify-center">
+
+				<div class="mb-2"> <TankIcon ></TankIcon> </div>
+				<p class="mt-2 font-semibold text-gray-700 dark:text-gray-400">Tanque</p>
+			</div>
+
+			<div class="py-4 mr-4 mb-4 basis-1/4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 flex flex-col items-center justify-center">
+
+				<div class="mb-1"> <OilIcon></OilIcon> </div>
+				<p class="mt-2 font-semibold text-gray-700 dark:text-gray-400">Aceite</p>
+			</div>
+
+			<div class="py-4 mr-4 mb-4 basis-1/4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 flex flex-col items-center justify-center">
+
+				<div class="mb-2"> <GaugeIcon></GaugeIcon> </div>
+				<p class="mt-2 font-semibold text-gray-700 dark:text-gray-400">Tablero</p>
+			</div>
+
+
+			<div class="py-4 mr-4 basis-1/4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 flex flex-col items-center justify-center">
+
+				<div class="mb-2"> <GasIcon></GasIcon> </div>
+				<p class="mt-2 font-semibold text-gray-700 dark:text-gray-400">Gas</p>
+			</div>
+
+			<div class="py-4 mr-4 basis-1/4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 flex flex-col items-center justify-center">
+
+				<div class="mb-2"> <BatteryIcon></BatteryIcon> </div>
+				<p class="mt-2 font-normal text-gray-700 dark:text-gray-400">Batería</p>
+			</div>
+
+			<div class="py-4 mr-4 basis-1/4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 flex flex-col items-center justify-center">
+
+				<div class="mb-2"> <WheelIcon></WheelIcon> </div>
+				<p class="mt-2 font-normal text-gray-700 dark:text-gray-400">Llantas</p>
+			</div>
+
+			<div class="py-4 mr-4 basis-1/4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 flex flex-col items-center justify-center">
+
+				<div class="mb-2"> <TemperatureIcon></TemperatureIcon> </div>
+				<p class="mt-2 font-normal text-gray-700 dark:text-gray-400">Temperatura</p>
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="bg-neutral-200 w-full pt-20">
+		<div class="flex justify-center items-center bg-neutral-200 mb-8">
+			<h1 class="text-black text-4xl font-bold flex text-center">Agenda una revisión<br>en nuestro laboratorio</h1>
+		</div>
+		<div class="flex flex-row justify-center w-full max-w-4xl mx-auto space-x-8">
+			<div class="basis-1/2 rounded-md overflow-hidden aspect-square">
+				<img src="/assets/workshop.png" alt="workshop" class=" w-full h-auto">
+			</div>
+
+			<form class="basis-1/2">
+				<div class="mb-2">
+					<label for="name" class="block mb-1 text-sm font-medium text-gray-500 dark:text-white">Nombre</label>
+					<input type="text" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required />
+				</div>
+				<div class="mb-2">
+					<label for="email" class="block mb-1 text-sm font-medium text-gray-500 dark:text-white">Correo</label>
+					<input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+				</div>
+				<div class="mb-8">
+					<label for="number" class="block mb-1 text-sm font-medium text-gray-500 dark:text-white">Celular</label>
+					<input type="tel" pattern="[0-9]{9}" id="number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+				</div>
+				<button type="submit" class="text-white bg-black hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm block w-full p-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Registrarse</button>
+				<Badge></Badge>
+			</form>
+
+
+		</div>	
+  
+	</section>
+
+	<section class="bg-teal-300 w-full p-5">
+		<div class="flex justify-center items-center w-full max-w-7xl mx-auto bg-teal-300 gap-4">
+			<FacebookIcon></FacebookIcon>
+			<InstagramIcon></InstagramIcon>
+			<LinkedInIcon></LinkedInIcon>
+			<TikTokIcon></TikTokIcon>
+			<YouTubeIcon></YouTubeIcon>
+			<WhatsAppIcon></WhatsAppIcon>
+
+		</div>
+	</section>
+	
+
 </Layout>
 
